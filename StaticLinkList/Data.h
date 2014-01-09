@@ -26,6 +26,7 @@ typedef struct Node
 typedef struct StaticLinkList 
 {
 	NODE elem[MAX_SIZE+2];	/*第一个结点和最后一个结点不存储元素.*/
+	size_t max_length; /*最大存储结点数,即MAX_SIZE.*/
 
 } STATICLINKLIST, PSTATICLINKLIST;
 
