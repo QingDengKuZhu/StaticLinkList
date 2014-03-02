@@ -44,7 +44,7 @@ void TraveList(PSTATICLINKLIST pL);
 /*若备用空间链表非空,则返回分配的结点的下标,否则返回0*/
 size_t Malloc_STATICLINKLIST(PSTATICLINKLIST pL);
 
-/*将下标为cur的空闲结点收回到备用结点*/
-void Free_STATICLINKLIST(PSTATICLINKLIST pL, size_t pos);
+/*将下标为i的空闲结点收回到备用结点*/
+void Free_STATICLINKLIST(PSTATICLINKLIST pL, size_t i);
 
 #endif
