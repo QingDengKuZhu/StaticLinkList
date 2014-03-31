@@ -8,26 +8,19 @@
 #include "Main_First.h"
 
 typedef int Elem;
-#define MAX_SIZE	(1000)				/*静态单链表中最多存储有效结点数目.*/
-#define MAX_LENGTH	(MAX_SIZE+2)		/*静态单链表中最多存储结点数目,第一个结点和最后一个结点不存储元素.*/
+#define MAX_SIZE		(1000)				/*静态单链表中最多存储有效结点数目.*/
 /*************************************
 **结点的数据结构.
 **************************************/
 typedef struct Node
 {
 	Elem data;	/*数据.*/
-	size_t cur;	/*游标.*/ 
-
-} NODE, *PNODE;
+	size_t cur;	/*游标,指向下一个结点.*/ 
+} NODE;
 
 /*************************************
 **链表结构
 **************************************/
-typedef struct StaticLinkList 
-{
-	PNODE elem;	/*第一个结点和最后一个结点不存储元素.*/
-	size_t max_length; /*最大存储结点数,即MAX_SIZE.*/
-
-} STATICLINKLIST, PSTATICLINKLIST;
+typedef NODE[MAX_SIZE] STATICLINKLIST;
 
 #endif
