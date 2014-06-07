@@ -16,11 +16,6 @@ typedef struct Node
 {
 	Elem data;	/*数据.*/
 	size_t cur;	/*游标,指向下一个结点.*/ 
-} NODE;
-
-/*************************************
-**链表结构
-**************************************/
-typedef NODE[MAX_SIZE] STATICLINKLIST;
+} NODE, STATICLINKLIST[MAX_SIZE+2];
 
 #endif
